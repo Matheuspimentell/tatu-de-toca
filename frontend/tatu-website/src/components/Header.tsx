@@ -1,15 +1,15 @@
 import { Link } from '@tanstack/react-router'
 import { NavigationMenu } from '@base-ui/react'
-import logo from '../../public/logo-tatu.png'
+import logo from '/logo-tatu.png'
 
 export default function Header() {
   return (
-   <div className='grid grid-cols-2 items-center p-6'>
-      <Link to='/' className='col-span-1 max-w-208 max-h-165'>
-        <img src={logo} alt='Company Logo'/>
+  <div className='flex items-center p-8'>
+      <Link to='/' className='flex-1 w-fit h-fit'>
+        <img src={logo} alt='Company Logo' className='max-w-208'/>
       </Link>
-      <NavigationMenu.Root className='col-span-1'>
-        <NavigationMenu.List className='flex flex-auto gap-10 justify-center'>
+      <NavigationMenu.Root className='flex-2 w-fit h-fit'>
+        <NavigationMenu.List className='flex flex-auto gap-14 justify-start'>
           <NavigationMenu.Item>
             <Link to='/'>Home</Link>
           </NavigationMenu.Item>

@@ -1,5 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router'
-import logo from '../logo.svg'
+import { Separator, Button } from '@base-ui/react'
 
 export const Route = createFileRoute('/')({
   component: App,
@@ -7,33 +7,20 @@ export const Route = createFileRoute('/')({
 
 function App() {
   return (
-    <div className="text-center">
-      <header className="min-h-screen flex flex-col items-center justify-center bg-[#282c34] text-white text-[calc(10px+2vmin)]">
-        <img
-          src={logo}
-          className="h-[40vmin] pointer-events-none animate-[spin_20s_linear_infinite]"
-          alt="logo"
-        />
-        <p>
-          Edit <code>src/routes/index.tsx</code> and save to reload.
-        </p>
-        <a
-          className="text-[#61dafb] hover:underline"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <a
-          className="text-[#61dafb] hover:underline"
-          href="https://tanstack.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn TanStack
-        </a>
-      </header>
+    <div className='flex p-8 gap-32'>
+      <div className='flex-2'>
+        <h1 className='text-3xl'>PRODUTOS PERSONALIZADOS FEITOS COM CAPRICHO</h1>
+        <Separator orientation='horizontal' className='h-3/100 bg-gray-700'/>
+        <section className='text-2xl'>Para seus momentos especiais, porque toda ocasião merece algo único</section>
+        <small className='text-base'>Entre em contato e conheça mais nosso trabalho</small>
+        <div className='flex gap-12'>
+          <Button>Encomendar</Button>
+          <Button>Ver Galeria</Button>
+        </div>
+      </div>
+      <div className='flex-1 bg-red-300'>
+        Direita
+      </div>
     </div>
   )
 }
