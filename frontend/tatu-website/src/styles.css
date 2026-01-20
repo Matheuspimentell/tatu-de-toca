@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+:root {
+  --bg-color: #EBF0FC
+}
+
 body {
   @apply m-0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -7,6 +11,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  isolation: isolate;
+  background-color: var(--bg-color) 
 }
 
 code {
