@@ -14,7 +14,7 @@ export default function Header() {
             <Link to='/'>Home</Link>
           </NavigationMenu.Item>
           <NavigationMenu.Item>
-            <Link to='.'>Loja</Link>
+            <Link to='/loja'>Loja</Link>
           </NavigationMenu.Item>
           <NavigationMenu.Item>
             <Link to='/about'>Sobre</Link>

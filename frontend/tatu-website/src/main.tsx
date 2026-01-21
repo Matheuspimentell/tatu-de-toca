@@ -5,6 +5,8 @@ import { RouterProvider, createRouter } from '@tanstack/react-router'
 // Import the generated route tree
 import { routeTree } from './routeTree.gen'
 
+import '@fontsource-variable/josefin-sans'
+import '@fontsource-variable/libre-bodoni'
 import './styles.css'
 import reportWebVitals from './reportWebVitals.ts'
 
