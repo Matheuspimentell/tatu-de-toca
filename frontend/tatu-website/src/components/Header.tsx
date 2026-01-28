@@ -9,7 +9,7 @@ export default function Header() {
         <img src={logo} alt='Company Logo' className='max-w-208'/>
       </Link>
       <NavigationMenu.Root className='flex-2 w-fit h-fit'>
-        <NavigationMenu.List className='flex flex-auto gap-14 justify-start'>
+        <NavigationMenu.List className='flex flex-auto gap-14 pr-30 justify-end'>
           <NavigationMenu.Item>
             <Link to='/'>Home</Link>
           </NavigationMenu.Item>
